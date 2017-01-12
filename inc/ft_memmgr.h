@@ -6,7 +6,7 @@
 /*   By: sgardner <stephenbgardner@gmail.com>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/01/02 08:02:11 by sgardner          #+#    #+#             */
-/*   Updated: 2017/01/11 00:29:01 by sgardner         ###   ########.fr       */
+/*   Updated: 2017/01/12 00:04:33 by sgardner         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -70,6 +70,9 @@ t_memlink	*ft_mlink_poplast(const char *label);
 t_memlink	*ft_mlink_rev(const char *label);
 
 t_memlink	*ft_mlink_sort(const char *label,
+	int (*cmp)(const t_memlink *, const t_memlink *));
+
+t_memlink	*ft_mlink_sortone(t_memlink *mlink,
 	int (*cmp)(const t_memlink *, const t_memlink *));
 
 t_memlink	*ft_mlink_transfer(t_memlink *mlink, const char *label);

@@ -52,6 +52,7 @@ SOURCE = \
 	mlink_poplast\
 	mlink_rev\
 	mlink_sort\
+	mlink_sortone\
 	mlink_transfer\
 	putchar\
 	putchar_fd\
