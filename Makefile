@@ -50,6 +50,7 @@ SOURCE = \
 	mlink_pop\
 	mlink_popall\
 	mlink_poplast\
+	mlink_remove\
 	mlink_rev\
 	mlink_sort\
 	mlink_sortone\

@@ -6,7 +6,7 @@
 /*   By: sgardner <stephenbgardner@gmail.com>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/01/02 09:56:30 by sgardner          #+#    #+#             */
-/*   Updated: 2017/01/09 12:46:24 by sgardner         ###   ########.fr       */
+/*   Updated: 2017/01/13 03:34:02 by sgardner         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,26 +15,13 @@
 
 /*
 ** CUSTOM:
-** Frees mlink and the memory area to which it points. Removes
-** mlink from its associated memchain, while preserving the
-** links between memlinks. Returns the next memlink in the
-** memchain; if the memchain is empty after deletion, the mem-
-** chain is also freed and NULL is returned.
+** Frees the memory area to which the content of mlink points.
+** Removes mlink with ft_mlink_remove, and returns the next
+**  memlink in the memchain.
 */
 
 t_memlink	*ft_mlink_del(t_memlink *mlink)
 {
-	t_memchain	*mchain;
-	t_memlink	**current;
-
-	mchain = mlink->mchain;
-	current = &mchain->links;
-	while (*current != mlink)
-		current = &(*current)->next;
-	*current = (*current)->next;
 	free(mlink->content);
-	free(mlink);
-	if (!mchain->links)
-		ft_mlink_popall(mchain->label);
-	return (*current);
+	return (ft_mlink_remove(mlink));
 }
