@@ -6,7 +6,7 @@
 /*   By: sgardner <stephenbgardner@gmail.com>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/01/13 03:07:53 by sgardner          #+#    #+#             */
-/*   Updated: 2017/01/13 04:09:23 by sgardner         ###   ########.fr       */
+/*   Updated: 2017/01/14 03:25:14 by sgardner         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,14 +29,11 @@ t_memlink	*ft_mlink_remove(t_memlink *mlink)
 
 	mchain = mlink->mchain;
 	current = &mchain->links;
-	if (!(*current)->next)
-	{
-		ft_mlink_popall(mchain->label);
-		return (NULL);
-	}
 	while (*current != mlink)
 		current = &(*current)->next;
 	*current = (*current)->next;
 	free(mlink);
+	if (!mchain->links)
+		return ((void *)ft_mlink_popall(mchain->label));
 	return (*current);
 }
