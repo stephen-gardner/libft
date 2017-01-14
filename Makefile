@@ -93,6 +93,7 @@ SOURCE = \
 	strnstr\
 	strrchr\
 	strsplit\
+	strsplit_mlink\
 	strstr\
 	strsub\
 	strtrim\

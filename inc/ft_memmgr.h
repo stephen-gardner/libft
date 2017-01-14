@@ -6,7 +6,7 @@
 /*   By: sgardner <stephenbgardner@gmail.com>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/01/02 08:02:11 by sgardner          #+#    #+#             */
-/*   Updated: 2017/01/13 03:20:31 by sgardner         ###   ########.fr       */
+/*   Updated: 2017/01/14 00:22:41 by sgardner         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,7 @@
 **
 ** Requesting memory from (or checking memory into) the memory
 ** manager is a commitment--freeing it outside of the manager
-** would be asking for trouble!
+** without removing it first would be asking for trouble!
 */
 
 typedef struct	s_memlink
@@ -40,6 +40,10 @@ typedef struct	s_memchain
 	t_memlink		*links;
 	struct s_memchain	*next;
 }		t_memchain;
+
+/*
+** Core functions
+*/
 
 t_bool		ft_mchain_exists(const char *label);
 
@@ -78,4 +82,10 @@ t_memlink	*ft_mlink_sortone(t_memlink *mlink,
 	int (*cmp)(const t_memlink *, const t_memlink *));
 
 t_memlink	*ft_mlink_transfer(t_memlink *mlink, const char *label);
+
+/*
+** Utility functions
+*/
+
+t_memlink	*ft_strsplit_mlink(const char *label, const char *s, char c);
 #endif
