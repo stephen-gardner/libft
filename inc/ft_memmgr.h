@@ -6,7 +6,7 @@
 /*   By: sgardner <stephenbgardner@gmail.com>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/01/02 08:02:11 by sgardner          #+#    #+#             */
-/*   Updated: 2017/01/14 00:22:41 by sgardner         ###   ########.fr       */
+/*   Updated: 2017/01/14 03:19:45 by sgardner         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -61,7 +61,7 @@ size_t		ft_mlink_count(t_memlink *mlink);
 
 t_memlink	*ft_mlink_del(t_memlink *mlink);
 
-t_memlink	*ft_mlink_find(void *mem);
+t_memlink	*ft_mlink_find(const char *label, void *mem);
 
 t_memlink	*ft_mlink_gethead(const char *label);
 
