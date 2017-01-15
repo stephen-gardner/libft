@@ -92,6 +92,7 @@ SOURCE = \
 	strnlen\
 	strnstr\
 	strrchr\
+	strrev\
 	strsplit\
 	strsplit_mlink\
 	strstr\

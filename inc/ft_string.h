@@ -6,7 +6,7 @@
 /*   By: sgardner <stephenbgardner@gmail.com>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/12/16 01:22:52 by sgardner          #+#    #+#             */
-/*   Updated: 2017/01/03 06:09:22 by sgardner         ###   ########.fr       */
+/*   Updated: 2017/01/14 18:29:18 by sgardner         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -107,6 +107,8 @@ char	*ft_strmapi(const char *s, char (*f)(unsigned int, char));
 int	ft_strnequ(const char *s1, const char *s2, size_t n);
 
 char	*ft_strnew(size_t size);
+
+char	*ft_strrev(char *str);
 
 char	**ft_strsplit(const char *s, char c);
 
