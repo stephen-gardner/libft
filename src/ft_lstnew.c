@@ -6,7 +6,7 @@
 /*   By: sgardner <stephenbgardner@gmail.com>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/12/20 18:27:46 by sgardner          #+#    #+#             */
-/*   Updated: 2016/12/22 02:20:56 by sgardner         ###   ########.fr       */
+/*   Updated: 2017/01/14 20:44:36 by sgardner         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,14 +16,14 @@
 
 /*
 ** BONUS ASSIGNMENT:
-** Allocates (with malloc(3)) and returns a "fresh" link. The
-** variables content and content_size of the new link are ini-
-** tialized by copy of the parameters of the function. If the pa-
-** rameter content is NULL, the variable content is initialized to
-** NULL and the variable content_size is initialized to 0 even
-** if the parameter content_size isn't. The variable next is
-** initialized to NULL. If the allocation fails, the function returns
-** NULL.
+** Allocates (with malloc(3)) and returns a "fresh" link.
+** The variables content and content_size of the new link are
+**  initialized by copy of the parameters of the function.
+** If the parameter content is NULL, the variable content is
+**  initialized to NULL and the variable content_size is
+**  initialized to 0 even if the parameter content_size isn't.
+** The variable next is initialized to NULL.
+** If the allocation fails, the function returns NULL.
 */
 
 t_list	*ft_lstnew(const void *content, size_t content_size)

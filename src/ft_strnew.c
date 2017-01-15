@@ -6,7 +6,7 @@
 /*   By: sgardner <stephenbgardner@gmail.com>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/12/16 01:20:15 by sgardner          #+#    #+#             */
-/*   Updated: 2016/12/22 17:02:39 by sgardner         ###   ########.fr       */
+/*   Updated: 2017/01/14 23:00:14 by sgardner         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,9 +14,10 @@
 
 /*
 ** ASSIGNMENT:
-** Allocates (with malloc(3)) and returns a "fresh" string end-
-** ing with '\0'. Each character of the string is initialized at
-** '\0'. If the allocation fails the function returns NULL.
+** Allocates (with malloc(3)) and returns a "fresh" string
+**  ending with '\0'.
+** Each character of the string is initialized at '\0'.
+** If the allocation fails the function returns NULL.
 */
 
 char	*ft_strnew(size_t size)

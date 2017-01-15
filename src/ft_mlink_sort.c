@@ -6,7 +6,7 @@
 /*   By: sgardner <stephenbgardner@gmail.com>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/01/03 22:38:52 by sgardner          #+#    #+#             */
-/*   Updated: 2017/01/11 00:47:14 by sgardner         ###   ########.fr       */
+/*   Updated: 2017/01/14 22:31:12 by sgardner         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -57,9 +57,9 @@ static t_memlink	*split(t_memlink *head, int (*cmp)())
 /*
 ** CUSTOM:
 ** Sorts the memchain, specified by label, by comparing links
-** with cmp (expected return values of cmp should be similar to
-** memcmp) and returns the head of the memchain. Returns NULL if
-** the mechain does not exist.
+**  with cmp (expected return values of cmp should be similar to
+**  memcmp) and returns the head of the memchain.
+** Returns NULL if the mechain does not exist.
 **
 ** ALGORITHM: Merge Sort
 ** TO-DO: Re-implement without recursion...

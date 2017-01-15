@@ -6,7 +6,7 @@
 /*   By: sgardner <stephenbgardner@gmail.com>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/01/02 08:02:11 by sgardner          #+#    #+#             */
-/*   Updated: 2017/01/14 03:19:45 by sgardner         ###   ########.fr       */
+/*   Updated: 2017/01/14 23:15:37 by sgardner         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,15 +15,14 @@
 # include "ft_cmndef.h"
 
 /*
-** Memory Manager exclusive to libft
-**
+** CUSTOM: 
+** Memory Manager exclusive to libft.
 ** Design is a little wack because of norm restrictions (like no
-** global variables), but it gets the job done without exposing
-** useless internal functions.
-**
+**  global variables), but it gets the job done without exposing
+**  useless internal functions.
 ** Requesting memory from (or checking memory into) the memory
-** manager is a commitment--freeing it outside of the manager
-** without removing it first would be asking for trouble!
+**  manager is a commitment--freeing it outside of the manager
+**  without removing it first would be asking for trouble!
 */
 
 typedef struct	s_memlink

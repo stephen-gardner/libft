@@ -6,7 +6,7 @@
 /*   By: sgardner <stephenbgardner@gmail.com>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/12/17 23:07:15 by sgardner          #+#    #+#             */
-/*   Updated: 2017/01/10 10:07:31 by sgardner         ###   ########.fr       */
+/*   Updated: 2017/01/14 23:01:37 by sgardner         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,10 +16,11 @@
 /*
 ** ASSIGNMENT:
 ** Allocates (with malloc(3)) and returns a "fresh" substring
-** from the string given as argument. The substring begins at
-** start and is of size len. If start and len aren't refer-
-** ing to a valid substring, the behavior is undefined. If the
-** allocation fails, the function returns NULL.
+**  from the string given as argument.
+** The substring begins at start and is of size len.
+** If start and len aren't refering to a valid substring, the
+**  behavior is undefined.
+** If the allocation fails, the function returns NULL.
 */
 
 char	*ft_strsub(const char *s, unsigned int start, size_t len)

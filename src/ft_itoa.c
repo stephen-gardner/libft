@@ -6,7 +6,7 @@
 /*   By: sgardner <stephenbgardner@gmail.com>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/12/20 07:50:03 by sgardner          #+#    #+#             */
-/*   Updated: 2017/01/10 10:15:25 by sgardner         ###   ########.fr       */
+/*   Updated: 2017/01/14 20:37:45 by sgardner         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,10 +15,11 @@
 
 /*
 ** ASSIGNMENT:
-** Allocate (with malloc(3)) and returns a "fresh" string end-
-** ing with '\0' representing the integer n given as argument.
-** Negative numbers must be supported. If the allocation fails,
-** the function returns NULL.
+** Allocate (with malloc(3)) and returns a "fresh" string
+**  ending with '\0' representing the integer n given as
+**  argument.
+** Negative numbers must be supported.
+** If the allocation fails, the function returns NULL.
 */
 
 char	*ft_itoa(int n)

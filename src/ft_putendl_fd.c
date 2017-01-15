@@ -6,7 +6,7 @@
 /*   By: sgardner <stephenbgardner@gmail.com>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/12/16 01:16:00 by sgardner          #+#    #+#             */
-/*   Updated: 2016/12/22 17:17:37 by sgardner         ###   ########.fr       */
+/*   Updated: 2017/01/14 22:50:00 by sgardner         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 /*
 ** ASSIGNMENT:
 ** Outputs the string s to the file descriptor fd followed by a
-** '\n'.
+**  '\n'.
 */
 
 void	ft_putendl_fd(const char *s, int fd)

@@ -6,7 +6,7 @@
 /*   By: sgardner <stephenbgardner@gmail.com>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/01/02 09:19:37 by sgardner          #+#    #+#             */
-/*   Updated: 2017/01/09 12:37:52 by sgardner         ###   ########.fr       */
+/*   Updated: 2017/01/14 20:48:29 by sgardner         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,11 +16,12 @@
 
 /*
 ** CUSTOM:
-** Returns the memchain specified by label. If force_gen is
-** TRUE, the memchain will be generated if it doesn't exist, and
-** added to the end of the memchain list. The variables links
-** and next must be set to NULL. If the allocation fails, the
-** function returns NULL.
+** Returns the memchain specified by label.
+** If force_gen is TRUE, the memchain will be generated if it
+**  doesn't exist, and added to the end of the memchain list.
+** The struct variables links and next must point to NULL; and
+**  label must point to the function parameter of the same name.
+** If the allocation fails, the function returns NULL.
 */
 
 t_memchain	*ft_mchain_get(const char *label, t_bool force_gen)

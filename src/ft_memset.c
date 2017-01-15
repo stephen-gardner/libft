@@ -6,7 +6,7 @@
 /*   By: sgardner <stephenbgardner@gmail.com>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/12/16 01:15:29 by sgardner          #+#    #+#             */
-/*   Updated: 2016/12/26 17:55:58 by sgardner         ###   ########.fr       */
+/*   Updated: 2017/01/14 20:52:03 by sgardner         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@
 ** ASSIGNMENT:
 ** Re-code similarly named libc function.
 ** This function lacks optimizations such as word copying and
-** vectorization.
+**  vectorization.
 */
 
 void	*ft_memset(void *s, int c, size_t n)

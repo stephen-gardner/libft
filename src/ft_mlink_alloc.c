@@ -6,7 +6,7 @@
 /*   By: sgardner <stephenbgardner@gmail.com>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/01/02 09:48:14 by sgardner          #+#    #+#             */
-/*   Updated: 2017/01/11 00:29:42 by sgardner         ###   ########.fr       */
+/*   Updated: 2017/01/14 21:03:48 by sgardner         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,11 +15,11 @@
 
 /*
 ** CUSTOM:
-** Allocates and returns a fresh memory area. Creates a new mem-
-** link containing a pointer to the newly allocated space and
-** its size, which is added to the end of the memchain specfied
-** by label. The memchain is generated if it does not exist. If
-** the allocation fails, the function returns NULL.
+** Allocates and returns a fresh memory area.
+** Creates a new memlink entry in the memchain specified by
+**  label by passing the freshly allocated memory's pointer and
+**  size to ft_mlink_add.
+** If the allocation fails, the function returns NULL.
 */
 
 void	*ft_mlink_alloc(const char *label, size_t size)

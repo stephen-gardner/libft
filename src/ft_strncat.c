@@ -6,7 +6,7 @@
 /*   By: sgardner <stephenbgardner@gmail.com>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/12/16 02:05:05 by sgardner          #+#    #+#             */
-/*   Updated: 2017/01/10 09:56:32 by sgardner         ###   ########.fr       */
+/*   Updated: 2017/01/14 22:59:05 by sgardner         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@
 ** ASSIGNMENT:
 ** Re-code similarly named libc function.
 ** This function lacks optimizations such as word copying and
-** vectorization.
+**  vectorization.
 */
 
 char	*ft_strncat(char *s1, const char *s2, size_t n)

@@ -6,7 +6,7 @@
 /*   By: sgardner <stephenbgardner@gmail.com>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/01/02 09:49:45 by sgardner          #+#    #+#             */
-/*   Updated: 2017/01/10 09:03:05 by sgardner         ###   ########.fr       */
+/*   Updated: 2017/01/14 22:21:29 by sgardner         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,10 +16,12 @@
 
 /*
 ** CUSTOM:
-** Frees all memlinks and associated memory areas, in the mem-
-** chain specified by label, before freeing the memchain itself.
-** Preserves the links between memchains. Returns the number of
-** memlinks freed. If the memchain doesn't exist, returns 0.
+** Frees all memlinks and associated memory areas in the
+**  memchain specified by label, before freeing the memchain
+**  itself.
+** Preserves the links between memchains.
+** Returns the number of memlinks freed; if the memchain doesn't
+**  exist, returns 0.
 */
 
 size_t	ft_mlink_popall(const char *label)

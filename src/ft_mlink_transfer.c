@@ -6,7 +6,7 @@
 /*   By: sgardner <stephenbgardner@gmail.com>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/01/10 20:31:59 by sgardner          #+#    #+#             */
-/*   Updated: 2017/01/11 00:49:31 by sgardner         ###   ########.fr       */
+/*   Updated: 2017/01/14 22:45:05 by sgardner         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,10 +15,12 @@
 /*
 ** CUSTOM:
 ** Transfers mlink to the end of the memchain specified by
-** label, generating it if necessary. Returns the next link in
-** the source memchain, or NULL if the allocation fails. If the
-** source memchain is empty after transfer, it is freed and NULL
-** is returned.
+**  label, generating it if necessary, and points the struct
+**  variable mchain to the destination memchain.
+** Returns the next link in the source memchain, or NULL if the
+**  allocation fails.
+** If the source memchain is empty after transfer, it is freed and NULL
+**  is returned.
 */
 
 t_memlink	*ft_mlink_transfer(t_memlink *mlink, const char *label)

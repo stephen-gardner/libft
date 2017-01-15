@@ -6,7 +6,7 @@
 /*   By: sgardner <stephenbgardner@gmail.com>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/12/19 11:54:05 by sgardner          #+#    #+#             */
-/*   Updated: 2016/12/23 04:50:38 by sgardner         ###   ########.fr       */
+/*   Updated: 2017/01/14 22:51:48 by sgardner         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,8 +16,8 @@
 /*
 ** CUSTOM:
 ** Capitalizes the first letter of each word and transforms all
-** other letters to lowercase, returning str. A word is a string
-** of alphanumeric characters.
+**  other letters in the word to lowercase, returning str.
+** A word is a string of alphanumeric characters.
 */
 
 char	*ft_strcapitalize(char *str)

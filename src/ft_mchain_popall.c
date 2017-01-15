@@ -6,7 +6,7 @@
 /*   By: sgardner <stephenbgardner@gmail.com>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/01/04 19:50:36 by sgardner          #+#    #+#             */
-/*   Updated: 2017/01/09 12:48:45 by sgardner         ###   ########.fr       */
+/*   Updated: 2017/01/14 20:49:23 by sgardner         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 /*
 ** CUSTOM:
 ** Frees ALL memlinks and associated memory areas. Returns the
-** number of memlinks freed.
+**  number of memlinks freed.
 */
 
 size_t	ft_mchain_popall(void)

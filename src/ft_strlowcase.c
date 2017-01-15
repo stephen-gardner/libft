@@ -6,7 +6,7 @@
 /*   By: sgardner <stephenbgardner@gmail.com>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/12/19 11:19:01 by sgardner          #+#    #+#             */
-/*   Updated: 2016/12/23 04:54:21 by sgardner         ###   ########.fr       */
+/*   Updated: 2017/01/14 22:57:05 by sgardner         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,8 +15,8 @@
 
 /*
 ** CUSTOM:
-** Transforms every letter of every word to lowercase and returns
-** str.
+** Transforms every letter of every word to lowercase and
+**  returns str.
 */
 
 char	*ft_strlowcase(char *str)

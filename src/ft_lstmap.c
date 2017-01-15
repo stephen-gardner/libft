@@ -6,7 +6,7 @@
 /*   By: sgardner <stephenbgardner@gmail.com>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/12/23 02:10:53 by sgardner          #+#    #+#             */
-/*   Updated: 2016/12/23 04:34:05 by sgardner         ###   ########.fr       */
+/*   Updated: 2017/01/14 20:42:23 by sgardner         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,10 +21,10 @@ static void	del_content(void *content, size_t content_size)
 
 /*
 ** BONUS ASSIGNMENT:
-** Iterates a list lst and applies the function f to each link to
-** create a "fresh" list (using malloc(3)) resulting from the suc-
-** cessive applications of f. If the allocation fails, the function
-** returns NULL.
+** Iterates a list lst and applies the function f to each link
+**  to create a "fresh" list (using malloc(3)) resulting from
+**  the successive applications of f.
+** If the allocation fails, the function returns NULL.
 */
 
 t_list		*ft_lstmap(t_list *lst, t_list *(*f)(t_list *elem))

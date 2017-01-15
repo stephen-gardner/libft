@@ -6,7 +6,7 @@
 /*   By: sgardner <stephenbgardner@gmail.com>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/12/16 01:16:45 by sgardner          #+#    #+#             */
-/*   Updated: 2016/12/22 20:32:23 by sgardner         ###   ########.fr       */
+/*   Updated: 2017/01/14 22:50:41 by sgardner         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@
 ** CUSTOM:
 ** Re-production of similarly named libc function.
 ** This functions lacks optimizations such as word copying and
-** vectorization.
+**  vectorization.
 */
 
 char	*ft_stpncpy(char *s1, const char *s2, size_t n)

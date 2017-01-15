@@ -6,7 +6,7 @@
 /*   By: sgardner <stephenbgardner@gmail.com>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/01/02 09:46:20 by sgardner          #+#    #+#             */
-/*   Updated: 2017/01/11 00:27:36 by sgardner         ###   ########.fr       */
+/*   Updated: 2017/01/14 20:55:36 by sgardner         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,11 +16,12 @@
 /*
 ** CUSTOM:
 ** Allocates and returns a new memlink, which is added to the
-** end of the memchain specified by label. If the memchain does
-** not exist, it is generated. The variables content and
-** content_size are set to the function parameters mem and size;
-** and next is set to NULL. If the allocation fails, the
-** function returns NULL.
+**  end of the memchain specified by label.
+** If the memchain does not exist, it is generated.
+** The struct variables content and content_size are set to the
+**  function parameters mem and size, next pointed to NULL, and
+**  mchain pointed to the parent memchain.
+** If the allocation fails, the function returns NULL.
 */
 
 t_memlink	*ft_mlink_add(const char *label, void *mem, size_t size)

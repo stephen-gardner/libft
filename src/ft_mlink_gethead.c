@@ -6,7 +6,7 @@
 /*   By: sgardner <stephenbgardner@gmail.com>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/01/02 09:40:54 by sgardner          #+#    #+#             */
-/*   Updated: 2017/01/09 12:54:34 by sgardner         ###   ########.fr       */
+/*   Updated: 2017/01/14 21:06:13 by sgardner         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 /*
 ** CUSTOM:
 ** Returns the head of the memchain specified by label, or NULL
-** if the memchain does not exist.
+**  if the memchain does not exist.
 */
 
 t_memlink	*ft_mlink_gethead(const char *label)

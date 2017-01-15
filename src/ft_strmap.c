@@ -6,7 +6,7 @@
 /*   By: sgardner <stephenbgardner@gmail.com>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/12/16 02:38:46 by sgardner          #+#    #+#             */
-/*   Updated: 2016/12/22 17:06:00 by sgardner         ###   ########.fr       */
+/*   Updated: 2017/01/14 22:58:04 by sgardner         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,8 +16,8 @@
 /*
 ** ASSIGNMENT:
 ** Applies the function f to each character of the string given
-** as argument to create a "fresh" new string (with malloc(3))
-** resulting from the successive applications of f.
+**  as argument to create a "fresh" new string (with malloc(3))
+**  resulting from the successive applications of f.
 */
 
 char	*ft_strmap(const char *s, char (*f)(char))

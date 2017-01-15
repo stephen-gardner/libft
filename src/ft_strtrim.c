@@ -6,7 +6,7 @@
 /*   By: sgardner <stephenbgardner@gmail.com>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/12/17 23:39:13 by sgardner          #+#    #+#             */
-/*   Updated: 2017/01/04 21:33:24 by sgardner         ###   ########.fr       */
+/*   Updated: 2017/01/14 23:03:00 by sgardner         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,11 +22,13 @@ static size_t	trim_dir(const char *s, size_t index, t_bool forward)
 /*
 ** ASSIGNMENT:
 ** Allocates (with malloc(3)) and returns a copy of the string
-** given as argument without whitespaces at the beginning or at
-** the end of the string. Will be considered as whitespaces the
-** following characters ' ', '\n' and '\t'. If s has no whites-
-** paces at the beginning or at the end, the function returns a
-** copy of s. If the allocation fails the function returns NULL.
+**  given as argument without whitespaces at the beginning or at
+**  the end of the string.
+** Will be considered as whitespaces the following characters
+**  ' ', '\n' and '\t'.
+** If s has no whitespaces at the beginning or at the end, the
+**  function returns a copy of s.
+** If the allocation fails the function returns NULL.
 */
 
 char		*ft_strtrim(const char *s)

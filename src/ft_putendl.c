@@ -6,7 +6,7 @@
 /*   By: sgardner <stephenbgardner@gmail.com>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/12/16 01:15:55 by sgardner          #+#    #+#             */
-/*   Updated: 2016/12/22 17:12:52 by sgardner         ###   ########.fr       */
+/*   Updated: 2017/01/14 22:49:25 by sgardner         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 /*
 ** ASSIGNMENT:
 ** Outputs the string s to the standard output followed by a
-** '\n'.
+**  '\n'.
 */
 
 void	ft_putendl(const char *s)

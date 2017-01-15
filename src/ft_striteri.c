@@ -6,7 +6,7 @@
 /*   By: sgardner <stephenbgardner@gmail.com>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/12/16 01:19:17 by sgardner          #+#    #+#             */
-/*   Updated: 2016/12/22 17:05:40 by sgardner         ###   ########.fr       */
+/*   Updated: 2017/01/14 22:55:14 by sgardner         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,8 +15,9 @@
 /*
 ** ASSIGNMENT:
 ** Applies the function f to each character of the string passed
-** as argument, and passing its index as first argument. Each
-** character is passed by address to f to be modified if necessary.
+**  as argument, and passing its index as first argument.
+** Each character is passed by address to f to be modified if
+**  necessary.
 */
 
 void	ft_striteri(char *s, void (*f)(unsigned int, char *))

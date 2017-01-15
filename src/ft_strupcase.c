@@ -6,7 +6,7 @@
 /*   By: sgardner <stephenbgardner@gmail.com>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/12/19 10:59:50 by sgardner          #+#    #+#             */
-/*   Updated: 2016/12/23 04:54:07 by sgardner         ###   ########.fr       */
+/*   Updated: 2017/01/14 23:03:21 by sgardner         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,8 +15,8 @@
 
 /*
 ** CUSTOM:
-** Transforms every letter of every word to uppercase and returns
-** str.
+** Transforms every letter of every word to uppercase and
+**  returns str.
 */
 
 char	*ft_strupcase(char *str)
