@@ -6,7 +6,7 @@
 /*   By: sgardner <stephenbgardner@gmail.com>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/01/11 23:48:29 by sgardner          #+#    #+#             */
-/*   Updated: 2017/01/12 00:03:39 by sgardner         ###   ########.fr       */
+/*   Updated: 2017/01/14 22:35:53 by sgardner         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,8 @@
 
 /*
 ** CUSTOM:
-** Sorts mlink into a (presumably) sorted memchain and returns
-** the memlink at its former position.
+** Sorts mlink into its (presumably) sorted memchain and returns
+**  the next memlink.
 */
 
 t_memlink	*ft_mlink_sortone(t_memlink *mlink,
@@ -36,6 +36,5 @@ t_memlink	*ft_mlink_sortone(t_memlink *mlink,
 	*sorted = mlink;
 	while (mlink->next)
 		mlink = mlink->next;
-	mlink->next = next;
-	return (mlink);
+	return ((mlink->next = next));
 }
