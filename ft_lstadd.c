@@ -1,19 +1,24 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   libft.h                                            :+:      :+:    :+:   */
+/*   ft_lstadd.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: sgardner <stephenbgardner@gmail.com>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2016/12/16 01:23:55 by sgardner          #+#    #+#             */
-/*   Updated: 2017/09/19 23:36:59 by sgardner         ###   ########.fr       */
+/*   Created: 2016/12/22 01:01:03 by sgardner          #+#    #+#             */
+/*   Updated: 2016/12/23 00:44:29 by sgardner         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef LIBFT_H
-# define LIBFT_H
-# include "ft_ctype.h"
-# include "ft_list.h"
-# include "ft_std.h"
-# include "ft_string.h"
-#endif
+#include "ft_list.h"
+
+/*
+** BONUS ASSIGNMENT:
+** Adds the element new at the beginnning of the list.
+*/
+
+void	ft_lstadd(t_list **alst, t_list *new)
+{
+	new->next = *alst;
+	*alst = new;
+}

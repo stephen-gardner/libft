@@ -1,19 +1,23 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   libft.h                                            :+:      :+:    :+:   */
+/*   ft_tolower.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: sgardner <stephenbgardner@gmail.com>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2016/12/16 01:23:55 by sgardner          #+#    #+#             */
-/*   Updated: 2017/09/19 23:36:59 by sgardner         ###   ########.fr       */
+/*   Created: 2016/12/16 01:23:37 by sgardner          #+#    #+#             */
+/*   Updated: 2017/01/04 08:19:28 by sgardner         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef LIBFT_H
-# define LIBFT_H
-# include "ft_ctype.h"
-# include "ft_list.h"
-# include "ft_std.h"
-# include "ft_string.h"
-#endif
+#include "ft_ctype.h"
+
+/*
+** ASSIGNMENT:
+** Re-code similarly named libc function.
+*/
+
+int	ft_tolower(int c)
+{
+	return ((ft_isupper(c)) ? c + ' ' : c);
+}

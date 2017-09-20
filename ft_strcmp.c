@@ -1,19 +1,36 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   libft.h                                            :+:      :+:    :+:   */
+/*   ft_strcmp.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: sgardner <stephenbgardner@gmail.com>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2016/12/16 01:23:55 by sgardner          #+#    #+#             */
-/*   Updated: 2017/09/19 23:36:59 by sgardner         ###   ########.fr       */
+/*   Created: 2016/12/16 01:17:33 by sgardner          #+#    #+#             */
+/*   Updated: 2017/09/19 21:15:38 by sgardner         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef LIBFT_H
-# define LIBFT_H
-# include "ft_ctype.h"
-# include "ft_list.h"
-# include "ft_std.h"
-# include "ft_string.h"
-#endif
+#include "ft_string.h"
+
+/*
+** ASSIGNMENT:
+** Re-code similarly named libc function.
+*/
+
+int	ft_strcmp(const char *s1, const char *s2)
+{
+	const t_byte	*b1;
+	const t_byte	*b2;
+	size_t			i;
+
+	b1 = (const t_byte *)s1;
+	b2 = (const t_byte *)s2;
+	i = 0;
+	while (b1[i])
+	{
+		if (b1[i] != b2[i])
+			break ;
+		i++;
+	}
+	return (b1[i] - b2[i]);
+}

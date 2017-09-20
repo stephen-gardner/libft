@@ -1,19 +1,27 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   libft.h                                            :+:      :+:    :+:   */
+/*   ft_cmndef.h                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: sgardner <stephenbgardner@gmail.com>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2016/12/16 01:23:55 by sgardner          #+#    #+#             */
-/*   Updated: 2017/09/19 23:36:59 by sgardner         ###   ########.fr       */
+/*   Created: 2016/12/16 01:06:16 by sgardner          #+#    #+#             */
+/*   Updated: 2017/01/04 21:32:17 by sgardner         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef LIBFT_H
-# define LIBFT_H
-# include "ft_ctype.h"
-# include "ft_list.h"
-# include "ft_std.h"
-# include "ft_string.h"
+#ifndef FT_CMNDEF_H
+# define FT_CMNDEF_H
+# include <string.h>
+
+/*
+** Fugly hack to suppress unused variable warning
+*/
+
+# define UNUSED(x) (void)(x)
+# define FALSE 0
+# define TRUE !FALSE
+
+typedef int		t_bool;
+typedef unsigned char	t_byte;
 #endif

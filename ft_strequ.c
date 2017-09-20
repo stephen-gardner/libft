@@ -1,19 +1,25 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   libft.h                                            :+:      :+:    :+:   */
+/*   ft_strequ.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: sgardner <stephenbgardner@gmail.com>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2016/12/16 01:23:55 by sgardner          #+#    #+#             */
-/*   Updated: 2017/09/19 23:36:59 by sgardner         ###   ########.fr       */
+/*   Created: 2016/12/16 01:18:12 by sgardner          #+#    #+#             */
+/*   Updated: 2017/01/14 22:53:03 by sgardner         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef LIBFT_H
-# define LIBFT_H
-# include "ft_ctype.h"
-# include "ft_list.h"
-# include "ft_std.h"
-# include "ft_string.h"
-#endif
+#include "ft_string.h"
+
+/*
+** ASSIGNMENT:
+** Lexicographical comparison between s1 and s2.
+** If the 2 strings are identical the function returns 1, or 0
+**  otherwise.
+*/
+
+int	ft_strequ(const char *s1, const char *s2)
+{
+	return (ft_strcmp(s1, s2) == 0);
+}

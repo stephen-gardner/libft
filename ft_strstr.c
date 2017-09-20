@@ -1,19 +1,41 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   libft.h                                            :+:      :+:    :+:   */
+/*   ft_strstr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: sgardner <stephenbgardner@gmail.com>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2016/12/16 01:23:55 by sgardner          #+#    #+#             */
-/*   Updated: 2017/09/19 23:36:59 by sgardner         ###   ########.fr       */
+/*   Created: 2016/12/16 19:45:55 by sgardner          #+#    #+#             */
+/*   Updated: 2016/12/22 18:24:53 by sgardner         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef LIBFT_H
-# define LIBFT_H
-# include "ft_ctype.h"
-# include "ft_list.h"
-# include "ft_std.h"
-# include "ft_string.h"
-#endif
+#include "ft_string.h"
+
+/*
+** ASSIGNMENT:
+** Re-code similarly named libc function.
+** This function currently uses an inefficient search method.
+*/
+
+char	*ft_strstr(const char *s1, const char *s2)
+{
+	size_t	i;
+
+	if (!*s2)
+		return ((char *)s1);
+	while (*s1)
+	{
+		i = 0;
+		while (s1[i])
+		{
+			if (s1[i] != s2[i])
+				break ;
+			i++;
+		}
+		if (!s2[i])
+			return ((char *)s1);
+		s1++;
+	}
+	return (NULL);
+}

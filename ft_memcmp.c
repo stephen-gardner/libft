@@ -1,19 +1,36 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   libft.h                                            :+:      :+:    :+:   */
+/*   ft_memcmp.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: sgardner <stephenbgardner@gmail.com>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2016/12/16 01:23:55 by sgardner          #+#    #+#             */
-/*   Updated: 2017/09/19 23:36:59 by sgardner         ###   ########.fr       */
+/*   Created: 2016/12/16 01:14:55 by sgardner          #+#    #+#             */
+/*   Updated: 2017/09/19 21:25:18 by sgardner         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef LIBFT_H
-# define LIBFT_H
-# include "ft_ctype.h"
-# include "ft_list.h"
-# include "ft_std.h"
-# include "ft_string.h"
-#endif
+#include "ft_string.h"
+
+/*
+** ASSIGNMENT:
+** Re-code similarly named libc function.
+*/
+
+int	ft_memcmp(const void *s1, const void *s2, size_t n)
+{
+	const t_byte	*b1;
+	const t_byte	*b2;
+	size_t			i;
+
+	b1 = (const t_byte *)s1;
+	b2 = (const t_byte *)s2;
+	i = 0;
+	while (i < n)
+	{
+		if (b1[i] != b2[i])
+			return (b1[i] - b2[i]);
+		i++;
+	}
+	return (0);
+}

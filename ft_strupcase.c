@@ -1,19 +1,30 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   libft.h                                            :+:      :+:    :+:   */
+/*   ft_strupcase.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: sgardner <stephenbgardner@gmail.com>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2016/12/16 01:23:55 by sgardner          #+#    #+#             */
-/*   Updated: 2017/09/19 23:36:59 by sgardner         ###   ########.fr       */
+/*   Created: 2016/12/19 10:59:50 by sgardner          #+#    #+#             */
+/*   Updated: 2017/01/14 23:03:21 by sgardner         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef LIBFT_H
-# define LIBFT_H
-# include "ft_ctype.h"
-# include "ft_list.h"
-# include "ft_std.h"
-# include "ft_string.h"
-#endif
+#include "ft_ctype.h"
+#include "ft_string.h"
+
+/*
+** CUSTOM:
+** Transforms every letter of every word to uppercase and
+**  returns str.
+*/
+
+char	*ft_strupcase(char *str)
+{
+	size_t	i;
+
+	i = 0;
+	while ((str[i] = (char)ft_toupper(str[i])))
+		i++;
+	return (str);
+}
