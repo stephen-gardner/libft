@@ -1,10 +1,10 @@
 #!/usr/bin/make -f
 NAME = libft.a
 CC = gcc
-CFLAGS = -Wall -Werror -Wextra -Wconversion
-SRC = ./src
-OBJ = ./src/obj
-INC = -I ./inc
+CFLAGS = -Wall -Werror -Wextra
+SRC = ./
+OBJ = ./obj
+INC = -I ./
 SOURCE = \
 	atoi\
 	bzero\
@@ -29,10 +29,6 @@ SOURCE = \
 	lstiter\
 	lstmap\
 	lstnew\
-	mchain_exists\
-	mchain_get\
-	mchain_gethead\
-	mchain_popall\
 	memalloc\
 	memccpy\
 	memchr\
@@ -41,20 +37,6 @@ SOURCE = \
 	memdel\
 	memmove\
 	memset\
-	mlink_add\
-	mlink_alloc\
-	mlink_count\
-	mlink_del\
-	mlink_find\
-	mlink_gethead\
-	mlink_pop\
-	mlink_popall\
-	mlink_poplast\
-	mlink_remove\
-	mlink_rev\
-	mlink_sort\
-	mlink_sortone\
-	mlink_transfer\
 	putchar\
 	putchar_fd\
 	putendl\
@@ -94,7 +76,6 @@ SOURCE = \
 	strrchr\
 	strrev\
 	strsplit\
-	strsplit_mlink\
 	strstr\
 	strsub\
 	strtrim\
