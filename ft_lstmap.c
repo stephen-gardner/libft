@@ -11,7 +11,7 @@
 /* ************************************************************************** */
 
 #include <stdlib.h>
-#include "ft_list.h"
+#include "libft.h"
 
 static void	del_content(void *content, size_t content_size)
 {

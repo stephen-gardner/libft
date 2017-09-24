@@ -11,7 +11,7 @@
 /* ************************************************************************** */
 
 #include <stdlib.h>
-#include "ft_string.h"
+#include "libft.h"
 
 static int		get_word_count(const char *s, char c)
 {

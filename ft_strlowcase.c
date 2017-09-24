@@ -6,12 +6,11 @@
 /*   By: sgardner <stephenbgardner@gmail.com>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/12/19 11:19:01 by sgardner          #+#    #+#             */
-/*   Updated: 2017/01/14 22:57:05 by sgardner         ###   ########.fr       */
+/*   Updated: 2017/09/23 19:52:52 by sgardner         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ft_ctype.h"
-#include "ft_string.h"
+#include "libft.h"
 
 /*
 ** CUSTOM:

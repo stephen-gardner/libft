@@ -2,10 +2,7 @@
 NAME = libft.a
 CC = gcc
 CFLAGS = -Wall -Werror -Wextra
-SRC = ./
-OBJ = ./obj
-INC = -I ./
-SOURCE = \
+SRC = \
 	atoi\
 	bzero\
 	isalnum\
@@ -83,21 +80,18 @@ SOURCE = \
 	toascii\
 	tolower\
 	toupper
-OBJECTS = $(patsubst %, $(OBJ)/ft_%.o, $(SOURCE))
+OBJ = $(patsubst %, ft_%.o, $(SRC))
 
 all: $(NAME)
 
-$(NAME): $(OBJECTS)
+$(NAME): $(OBJ)
 	@echo "Building $@..."
-	@ar -rc $@ $(OBJECTS)
-	@echo "Indexing..."
-	@ranlib $@
+	@ar -rcs $@ $(OBJ)
 	@echo "Done."
 
-$(OBJ)/%.o: $(SRC)/%.c
-	@mkdir -p $(OBJ)
+%.o: %.c
 	@echo "Compiling $<..."
-	@$(CC) $(CFLAGS) -c $< -o $@ $(INC)
+	@$(CC) $(CFLAGS) -c $< -o $@ -I ./
 
 clean:
 	@rm -rf $(OBJ)

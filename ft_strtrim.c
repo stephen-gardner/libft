@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ft_string.h"
+#include "libft.h"
 
 static size_t	trim_dir(const char *s, size_t index, t_bool forward)
 {

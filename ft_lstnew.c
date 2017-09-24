@@ -6,13 +6,12 @@
 /*   By: sgardner <stephenbgardner@gmail.com>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/12/20 18:27:46 by sgardner          #+#    #+#             */
-/*   Updated: 2017/09/20 10:02:56 by sgardner         ###   ########.fr       */
+/*   Updated: 2017/09/23 19:54:42 by sgardner         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdlib.h>
-#include "ft_list.h"
-#include "ft_string.h"
+#include "libft.h"
 
 /*
 ** BONUS ASSIGNMENT:

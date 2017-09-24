@@ -6,12 +6,12 @@
 /*   By: sgardner <stephenbgardner@gmail.com>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/12/16 01:15:46 by sgardner          #+#    #+#             */
-/*   Updated: 2017/09/20 10:39:49 by sgardner         ###   ########.fr       */
+/*   Updated: 2017/09/23 16:54:22 by sgardner         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
-#include "ft_std.h"
+#include "libft.h"
 
 /*
 ** ASSIGNMENT:
@@ -19,7 +19,7 @@
 ** This function has been adapted from above spec.
 */
 
-void	ft_putchar_fd(int c, int fd)
+void	ft_putchar_fd(char c, int fd)
 {
 	t_byte	b;
 
