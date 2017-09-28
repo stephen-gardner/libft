@@ -6,7 +6,7 @@
 /*   By: sgardner <stephenbgardner@gmail.com>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/12/18 04:38:11 by sgardner          #+#    #+#             */
-/*   Updated: 2017/09/20 14:36:14 by sgardner         ###   ########.fr       */
+/*   Updated: 2017/09/27 23:00:34 by sgardner         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -70,9 +70,9 @@ char			**ft_strsplit(const char *s, char c)
 	size_t	word_len;
 
 	word_count = get_word_count(s, c);
-	if (!(array = (char **)malloc(sizeof(*array) * ((size_t)word_count + 1))))
+	if (!(array = (char **)ft_memalloc(sizeof(*array)
+					* ((size_t)word_count + 1))))
 		return (NULL);
-	array[word_count] = NULL;
 	i = 0;
 	while (i < word_count)
 	{
