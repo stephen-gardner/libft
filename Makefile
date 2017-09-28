@@ -85,17 +85,13 @@ OBJ = $(patsubst %, ft_%.o, $(SRC))
 all: $(NAME)
 
 $(NAME): $(OBJ)
-	@echo "Building $@..."
 	@ar -rcs $@ $(OBJ)
-	@echo "Done."
 
 %.o: %.c
-	@echo "Compiling $<..."
 	@$(CC) $(CFLAGS) -c $< -o $@ -I ./
 
 clean:
 	@rm -rf $(OBJ)
-	@echo "Object files removed."
 
 fclean: clean
 	@rm -f $(NAME)
