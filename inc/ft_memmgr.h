@@ -6,7 +6,7 @@
 /*   By: sgardner <stephenbgardner@gmail.com>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/12/02 15:56:20 by sgardner          #+#    #+#             */
-/*   Updated: 2017/12/06 00:27:46 by sgardner         ###   ########.fr       */
+/*   Updated: 2018/04/12 01:53:41 by sgardner         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -56,5 +56,6 @@ t_mlink			*ft_mlfind(t_mchain *mchain, void *ptr);
 t_mlink			*ft_mlpop(t_mchain *mchain);
 t_mlink			*ft_mlremove(t_mlink *mlink);
 t_mlink			*ft_mlrev(t_mchain *mchain);
+size_t			ft_mlsize(t_mlink *mlink);
 t_mlink			*ft_mlxfer(t_mlink *mlink, t_mchain *mchain);
 #endif

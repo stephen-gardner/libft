@@ -76,6 +76,7 @@ SRC += \
 	memmgr/ft_mlpop\
 	memmgr/ft_mlremove\
 	memmgr/ft_mlrev\
+	memmgr/ft_mlsize\
 	memmgr/ft_mlxfer
 
 # [ OTHER ]

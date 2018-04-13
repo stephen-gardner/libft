@@ -6,7 +6,7 @@
 /*   By: sgardner <stephenbgardner@gmail.com>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/12/16 01:23:55 by sgardner          #+#    #+#             */
-/*   Updated: 2018/04/10 06:54:48 by sgardner         ###   ########.fr       */
+/*   Updated: 2018/04/13 03:22:56 by sgardner         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,14 +14,11 @@
 # define LIBFT_H
 # include <string.h>
 
-/*
-** Fugly hack to suppress unused variable warning
-*/
-
 # define UNUSED(x)		(void)(x)
+# define LEN(x)			ft_strlen(x)
 # define MAX(x, y)		((x > y) ? x : y)
 # define MIN(x, y)		((x < y) ? x : y)
-# define FALSE			0
+# define FALSE 			0
 # define TRUE			!FALSE
 
 typedef int				t_bool;
