@@ -6,7 +6,7 @@
 
 NAME = libft.a
 CC = gcc
-CFLAGS += -Wall -Werror -Wextra #-g -fsanitize=address
+CFLAGS += -Wall -Werror -Wextra -Wimplicit #-g -fsanitize=address
 INC = -I inc
 SRC_DIR = src
 OBJ_DIR = obj
@@ -62,6 +62,21 @@ SRC = \
 	ft_strsub\
 	ft_strtrim\
 	ft_strupcase
+
+# [ PRINTF ]
+
+SRC += \
+	printf/conv_char\
+	printf/conv_float\
+	printf/conv_int\
+	printf/conv_int_deprecated\
+	printf/conv_misc\
+	printf/conv_wchar\
+	printf/ft_printf\
+	printf/parser\
+	printf/process\
+	printf/util\
+	printf/util_int
 
 # [ MEMORY MANAGER ]
 

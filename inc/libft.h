@@ -6,7 +6,7 @@
 /*   By: sgardner <stephenbgardner@gmail.com>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/12/16 01:23:55 by sgardner          #+#    #+#             */
-/*   Updated: 2018/04/13 03:22:56 by sgardner         ###   ########.fr       */
+/*   Updated: 2018/04/15 18:11:51 by sgardner         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,7 @@
 
 # define UNUSED(x)		(void)(x)
 # define LEN(x)			ft_strlen(x)
+# define NLEN(x, y)		ft_strnlen(x, y)
 # define MAX(x, y)		((x > y) ? x : y)
 # define MIN(x, y)		((x < y) ? x : y)
 # define FALSE 			0
@@ -31,9 +32,9 @@ typedef unsigned char	t_byte;
 # define IS_ASCII(c)	(!(c >> 7))
 # define IS_BLANK(c)	(c == ' ' || c == '\t')
 # define IS_DIGIT(c)	((unsigned int)(c - '0') < 10)
-# define IS_GRAPH(c)	(c >= '!' && c <= '~')
+# define IS_GRAPH(c)	((unsigned int)(c - '!') < 94)
 # define IS_LOWER(c)	((unsigned int)(c - 'a') < 26)
-# define IS_PRINT(c)	((unsigned int)(c - ' ') < 126)
+# define IS_PRINT(c)	((unsigned int)(c - ' ') < 95)
 # define IS_CNTRL(c)	(!IS_PRINT(c))
 # define IS_UPPER(c)	((unsigned int)(c - 'A') < 26)
 # define IS_ALPHA(c)	(IS_LOWER(c) || IS_UPPER(c))
