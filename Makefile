@@ -32,6 +32,7 @@ SRC = \
 	ft_putnbr_fd\
 	ft_putstr\
 	ft_putstr_fd\
+	ft_revbytes\
 	ft_stpcpy\
 	ft_stpncpy\
 	ft_strcapitalize\
