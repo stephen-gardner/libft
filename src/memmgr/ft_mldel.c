@@ -6,7 +6,7 @@
 /*   By: sgardner <stephenbgardner@gmail.com>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/12/03 00:54:52 by sgardner          #+#    #+#             */
-/*   Updated: 2017/12/03 02:04:24 by sgardner         ###   ########.fr       */
+/*   Updated: 2018/07/10 02:06:45 by sgardner         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,7 @@
 
 t_mlink		*ft_mldel(t_mlink *mlink)
 {
-	free(mlink->ptr);
+	if (CANFREE(mlink))
+		free(mlink->ptr);
 	return (ft_mlremove(mlink));
 }
