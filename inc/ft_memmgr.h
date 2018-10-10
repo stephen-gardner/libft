@@ -6,13 +6,14 @@
 /*   By: sgardner <stephenbgardner@gmail.com>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/12/02 15:56:20 by sgardner          #+#    #+#             */
-/*   Updated: 2018/07/10 16:57:00 by sgardner         ###   ########.fr       */
+/*   Updated: 2018/10/10 00:36:03 by sgardner         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef FT_MEMMGR_H
 # define FT_MEMMGR_H
 # include "libft.h"
+# include <stdint.h>
 
 # define MCHAIN_LABEL_MAXLEN	26
 # define NOFREE					(~(SIZE_MAX >> 1))

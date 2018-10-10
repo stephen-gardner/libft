@@ -6,13 +6,13 @@
 /*   By: sgardner <stephenbgardner@gmail.com>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/12/16 01:23:55 by sgardner          #+#    #+#             */
-/*   Updated: 2018/05/03 06:41:17 by sgardner         ###   ########.fr       */
+/*   Updated: 2018/10/10 00:40:24 by sgardner         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef LIBFT_H
 # define LIBFT_H
-# include <string.h>
+# include <stddef.h>
 
 # define UNUSED(x)		(void)(x)
 # define LEN(x)			ft_strlen(x)
@@ -124,6 +124,7 @@ char	*ft_strlowcase(char *str);
 int		ft_strnequ(const char *s1, const char *s2, size_t n);
 char	*ft_strnew(size_t size);
 char	*ft_strrev(char *str);
+char	**ft_strsplit(const char *s, char delim);
 char	*ft_strsub(const char *s, unsigned int start, size_t len);
 char	*ft_strtrim(const char *s);
 char	*ft_strupcase(char *str);

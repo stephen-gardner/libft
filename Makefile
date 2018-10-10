@@ -61,6 +61,7 @@ SRC = \
 	ft_strnstr\
 	ft_strrchr\
 	ft_strrev\
+	ft_strsplit\
 	ft_strstr\
 	ft_strsub\
 	ft_strtrim\
