@@ -5,6 +5,10 @@
 ################################################################################
 
 NAME = libft.a
+AR = ar
+ARFLAGS = -rcs
+AS = nasm
+ASFLAGS += -f macho64
 CC = gcc
 CFLAGS += -Wall -Werror -Wextra
 CFLAGS += -Ofast
@@ -122,12 +126,16 @@ YELLOW = \033[1;33m
 all: $(NAME)
 
 $(NAME): $(OBJ)
-	@ar -rcs $@ $(OBJ)
+	@$(AR) $(ARFLAGS) $@ $(OBJ)
 	@echo "$(GREEN)DONE$(NC)"
 
 $(OBJ_DIR)/%.o: $(SRC_DIR)/%.c
 	@mkdir -p $(dir $@)
 	@$(CC) $(CFLAGS) $(INC) -c $< -o $@
+
+$(OBJ_DIR)/%.o: $(SRC_DIR)/%.s
+	@mkdir -p $(dir $@)
+	@$(AS) $(ASFLAGS) $< -o $@
 
 clean:
 	@rm -rf $(OBJ_DIR)

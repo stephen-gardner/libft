@@ -6,7 +6,7 @@
 /*   By: sgardner <stephenbgardner@gmail.com>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/12/16 01:23:55 by sgardner          #+#    #+#             */
-/*   Updated: 2018/10/10 00:40:24 by sgardner         ###   ########.fr       */
+/*   Updated: 2018/10/21 04:18:21 by sgardner         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,6 +29,7 @@
 
 typedef int				t_bool;
 typedef unsigned char	t_byte;
+typedef unsigned int	t_uint;
 
 /*
 ** Reproduction of <ctype.h>
@@ -36,21 +37,20 @@ typedef unsigned char	t_byte;
 
 # define IS_ASCII(c)	(!(c >> 7))
 # define IS_BLANK(c)	(c == ' ' || c == '\t')
-# define IS_DIGIT(c)	((unsigned int)(c - '0') < 10)
-# define IS_GRAPH(c)	((unsigned int)(c - '!') < 94)
-# define IS_LOWER(c)	((unsigned int)(c - 'a') < 26)
-# define IS_PRINT(c)	((unsigned int)(c - ' ') < 95)
+# define IS_DIGIT(c)	((t_uint)(c - '0') < 10)
+# define IS_GRAPH(c)	((t_uint)(c - '!') < 94)
+# define IS_LOWER(c)	((t_uint)(c - 'a') < 26)
+# define IS_PRINT(c)	((t_uint)(c - ' ') < 95)
 # define IS_CNTRL(c)	(!IS_PRINT(c))
-# define IS_UPPER(c)	((unsigned int)(c - 'A') < 26)
+# define IS_UPPER(c)	((t_uint)(c - 'A') < 26)
 # define IS_ALPHA(c)	(IS_LOWER(c) || IS_UPPER(c))
 # define IS_ALNUM(c)	(IS_ALPHA(c) || IS_DIGIT(c))
 # define IS_PUNCT(c)	(IS_PRINT(c) && !FT_ISALNUM(c) && c != ' ')
-# define IS_SPACE(c)	((unsigned int)(c - '\t') < 5)
+# define IS_SPACE(c)	(c == ' ' || (t_uint)(c - '\t') < 5)
+# define IS_XDIGIT(c)	(ISDIGIT(c) || (t_uint)(c - 'A') < 6)
 # define TO_ASCII(c)	(c & 0x7F)
 # define TO_LOWER(c)	(IS_UPPER(c) ? c + ' ' : c)
 # define TO_UPPER(c)	(IS_LOWER(c) ? c - ' ' : c)
-
-t_bool	ft_isxdigit(int c);
 
 /*
 ** Reproduction of <stdlib.h>
